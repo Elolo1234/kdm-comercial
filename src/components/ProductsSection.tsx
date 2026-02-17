@@ -57,7 +57,7 @@ const ProductsSection = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
-            <div key={product.title} className="product-card">
+            <div key={product.title} className="product-card group">
               <div className="aspect-square overflow-hidden">
                 <img
                   src={product.image}
@@ -66,7 +66,7 @@ const ProductsSection = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="product-card-overlay">
+              <div className="product-card-overlay group-hover:opacity-100">
                 <Link
                   to="/contato"
                   className="rounded-md bg-secondary px-6 py-2.5 text-sm font-semibold text-secondary-foreground transition-transform hover:scale-105"
