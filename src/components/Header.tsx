@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import logoKdm from "@/assets/logo-kdm.jpeg";
 
 const navItems = [
   { label: "Início", href: "/" },
@@ -40,10 +41,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex items-center justify-between py-4">
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-2xl font-heading font-bold text-gradient">KDM</span>
-          <span className={`hidden sm:block text-sm font-body ${scrolled ? "text-muted-foreground" : "text-primary-foreground/80"}`}>
-            Materiais &amp; Soluções
-          </span>
+          <img src={logoKdm} alt="KDM Representações" className="h-10 w-auto" />
         </Link>
 
         {/* Desktop nav */}

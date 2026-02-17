@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
+import logoKdm from "@/assets/logo-kdm.jpeg";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <span className="text-2xl font-heading font-bold text-gradient">KDM</span>
+            <img src={logoKdm} alt="KDM Representações" className="h-10 w-auto" />
             <p className="mt-3 text-sm text-background/70 leading-relaxed">
               Mais de 20 anos de experiência em fornecimento de materiais elétricos, hidráulicos, 
               luminárias LED e soluções ecológicas.
