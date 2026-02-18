@@ -9,12 +9,6 @@ const features = [
   { icon: Clock, label: "Agilidade", desc: "Entrega rápida e atendimento personalizado" },
 ];
 
-const stats = [
-  { number: "🚀", label: "Entrega Rápida" },
-  { number: "💰", label: "Preço Competitivo" },
-  { number: "🤝", label: "Atendimento Personalizado" },
-  { number: "✅", label: "Qualidade Garantida" },
-];
 
 const AboutSection = () => {
   return (
@@ -29,19 +23,9 @@ const AboutSection = () => {
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
             A KDM é especializada no fornecimento de materiais elétricos, hidráulicos, luminárias LED, 
-            playgrounds e mobiliários ecológicos. Atendemos órgãos públicos, prefeituras, indústrias e 
-            empresas em todo o Brasil, com sede em Bragança Paulista, SP.
+            playgrounds e mobiliários ecológicos. Atendemos órgãos públicos, prefeituras e indústrias, 
+            com sede em Bragança Paulista, SP.
           </p>
-        </div>
-
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-          {stats.map((stat) => (
-            <div key={stat.label} className="text-center p-6 glass-card rounded-lg">
-              <div className="stat-number mb-2">{stat.number}</div>
-              <p className="text-sm text-muted-foreground font-medium">{stat.label}</p>
-            </div>
-          ))}
         </div>
 
         {/* Features grid */}
