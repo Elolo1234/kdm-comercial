@@ -10,10 +10,10 @@ const features = [
 ];
 
 const stats = [
-  { number: "20+", label: "Anos de Experiência" },
-  { number: "500+", label: "Clientes Atendidos" },
-  { number: "1.000+", label: "Produtos Disponíveis" },
-  { number: "50+", label: "Municípios Atendidos" },
+  { number: "🚀", label: "Entrega Rápida" },
+  { number: "💰", label: "Preço Competitivo" },
+  { number: "🤝", label: "Atendimento Personalizado" },
+  { number: "✅", label: "Qualidade Garantida" },
 ];
 
 const AboutSection = () => {
