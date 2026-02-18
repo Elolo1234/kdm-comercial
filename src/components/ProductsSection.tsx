@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import productLed from "@/assets/product-led.jpg";
-import productHydraulic from "@/assets/product-hydraulic.jpg";
-import productPlayground from "@/assets/product-playground.jpg";
+import productHydraulic from "@/assets/product-hydraulic-new.jpeg";
+import productPlayground from "@/assets/product-playground-new.jpeg";
 import productEco from "@/assets/product-eco.jpg";
-import productElectrical from "@/assets/product-electrical.jpg";
+import productElectrical from "@/assets/product-electrical-new.jpeg";
 import productHardware from "@/assets/product-hardware.jpg";
 
 const products = [
