@@ -12,7 +12,7 @@ const features = [
 const stats = [
   { number: "20+", label: "Anos de Experiência" },
   { number: "500+", label: "Clientes Atendidos" },
-  { number: "1000+", label: "Produtos Disponíveis" },
+  { number: "1.000+", label: "Produtos Disponíveis" },
   { number: "50+", label: "Municípios Atendidos" },
 ];
 
@@ -24,7 +24,7 @@ const AboutSection = () => {
           <p className="text-secondary text-sm font-semibold tracking-widest uppercase mb-3">
             Sobre Nós
           </p>
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6">
             Confiança, Agilidade e Qualidade
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">

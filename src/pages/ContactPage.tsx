@@ -8,11 +8,9 @@ import Footer from "@/components/Footer";
 
 const contactSchema = z.object({
   nome: z.string().trim().min(1, "Nome é obrigatório").max(100),
-  empresa: z.string().trim().max(100).optional(),
-  cargo: z.string().trim().max(100).optional(),
   email: z.string().trim().email("E-mail inválido").max(255),
   telefone: z.string().trim().min(1, "Telefone é obrigatório").max(20),
-  cidade: z.string().trim().max(100).optional(),
+  
   interesse: z.string().min(1, "Selecione um segmento"),
   mensagem: z.string().trim().max(1000).optional(),
 });
@@ -84,34 +82,16 @@ const ContactPage = () => {
                   <legend className="font-heading font-semibold text-foreground mb-4">
                     Dados Pessoais
                   </legend>
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="text-sm font-medium text-foreground mb-1 block">
-                        Nome *
-                      </label>
-                      <input
-                        {...register("nome")}
-                        className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                        placeholder="Seu nome"
-                      />
-                      {errors.nome && <p className="text-destructive text-xs mt-1">{errors.nome.message}</p>}
-                    </div>
-                    <div>
-                      <label className="text-sm font-medium text-foreground mb-1 block">Empresa</label>
-                      <input
-                        {...register("empresa")}
-                        className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                        placeholder="Nome da empresa"
-                      />
-                    </div>
-                    <div className="sm:col-span-2">
-                      <label className="text-sm font-medium text-foreground mb-1 block">Cargo</label>
-                      <input
-                        {...register("cargo")}
-                        className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                        placeholder="Seu cargo"
-                      />
-                    </div>
+                  <div>
+                    <label className="text-sm font-medium text-foreground mb-1 block">
+                      Nome *
+                    </label>
+                    <input
+                      {...register("nome")}
+                      className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                      placeholder="Seu nome"
+                    />
+                    {errors.nome && <p className="text-destructive text-xs mt-1">{errors.nome.message}</p>}
                   </div>
                 </fieldset>
 
@@ -139,14 +119,6 @@ const ContactPage = () => {
                         placeholder="(11) 00000-0000"
                       />
                       {errors.telefone && <p className="text-destructive text-xs mt-1">{errors.telefone.message}</p>}
-                    </div>
-                    <div className="sm:col-span-2">
-                      <label className="text-sm font-medium text-foreground mb-1 block">Cidade / Estado</label>
-                      <input
-                        {...register("cidade")}
-                        className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                        placeholder="Sua cidade e estado"
-                      />
                     </div>
                   </div>
                 </fieldset>
