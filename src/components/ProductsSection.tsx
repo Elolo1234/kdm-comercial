@@ -10,32 +10,42 @@ const products = [
   {
     image: productLed,
     title: "Luminárias LED Profissionais",
-    desc: "Iluminação de alta eficiência para praças, vias públicas e áreas industriais.",
-  },
-  {
-    image: productHydraulic,
-    title: "Materiais Hidráulicos PEAD",
-    desc: "Tubulações e conexões de polietileno de alta densidade para infraestrutura.",
-  },
-  {
-    image: productPlayground,
-    title: "Playgrounds",
-    desc: "Equipamentos de lazer seguros e coloridos para condomínios e espaços públicos.",
-  },
-  {
-    image: productEco,
-    title: "Mobiliário Ecológico",
-    desc: "Bancos, mesas e lixeiras fabricados com materiais reciclados e sustentáveis.",
+    desc: "Iluminação profissional em LED para áreas públicas, privadas e industriais.",
   },
   {
     image: productElectrical,
     title: "Materiais Elétricos",
-    desc: "Cabos, disjuntores, conectores e equipamentos elétricos profissionais.",
+    desc: "Materiais elétricos para baixa e alta tensão.",
+  },
+  {
+    image: productPlayground,
+    title: "Playgrounds",
+    desc: "Playgrounds para praças, escolas e condomínios.",
+  },
+  {
+    image: productEco,
+    title: "Móveis em Madeira Plástica Ecológica",
+    desc: "Lixeiras, bancos para jardins e praças, pergolados, decks e ripados.",
+  },
+  {
+    image: productHydraulic,
+    title: "Materiais Hidráulicos",
+    desc: "Tubos PEAD, conexões e outros materiais hidráulicos.",
   },
   {
     image: productHardware,
-    title: "Ferragens e Ferramentas",
-    desc: "Parafusos, fixadores e ferramentas para construção e manutenção industrial.",
+    title: "EPIs e Uniformes",
+    desc: "Equipamentos de proteção individual e uniformes profissionais.",
+  },
+  {
+    image: productHardware,
+    title: "Tintas e Acessórios",
+    desc: "Tintas e todos os seus segmentos para obras e acabamentos.",
+  },
+  {
+    image: productHardware,
+    title: "Ferragens, Ferramentas, Máquinas e Equipamentos",
+    desc: "Ferragens, ferramentas, máquinas e equipamentos para construção e indústria.",
   },
 ];
 
