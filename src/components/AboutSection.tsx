@@ -19,12 +19,12 @@ const AboutSection = () => {
             Sobre Nós
           </p>
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6">
-            Confiança, Agilidade e Qualidade
+            Confiança, Agilidade, Qualidade, Parceria e Respeito 
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            A KDM é especializada no fornecimento de materiais elétricos, hidráulicos, luminárias LED, 
-            playgrounds e mobiliários ecológicos. Atendemos órgãos públicos, prefeituras e indústrias, 
-            com sede em Bragança Paulista, SP.
+            A empresa kdm comercial representações e serviços, empresa com mais de 20 anos de experiência,ofereço confiança, agilidade,  parceria, respeito e qualidade dos produtos, buscando sempre inovações, atendendo a diversos clientes como: órgãos públicos, prefeituras, construções, condomínio, indústrias e clientes privados. KDM é especializada no fornecimento de materiais elétricos, hidráulicos, luminárias LED, 
+            playgrounds e mobiliários ecológicos. Atendemos órgãos públicos, prefeituras e indústrias, com atuação
+            em Bragança Paulista, SP.
           </p>
         </div>
 

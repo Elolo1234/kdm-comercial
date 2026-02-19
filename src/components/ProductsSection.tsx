@@ -5,6 +5,9 @@ import productPlayground from "@/assets/product-playground-new.jpeg";
 import productEco from "@/assets/product-eco.jpg";
 import productElectrical from "@/assets/product-electrical-new.jpeg";
 import productHardware from "@/assets/product-hardware.jpg";
+import productTintas from "@/assets/product-tintas.webp";
+import productUniformes from "@/assets/product-uniformes.jpeg";
+
 
 const products = [
   {
@@ -33,12 +36,12 @@ const products = [
     desc: "Tubos PEAD, conexões e outros materiais hidráulicos.",
   },
   {
-    image: productHardware,
+    image: productUniformes,
     title: "EPIs e Uniformes",
     desc: "Equipamentos de proteção individual e uniformes profissionais.",
   },
   {
-    image: productHardware,
+    image: productTintas,
     title: "Tintas e Acessórios",
     desc: "Tintas e todos os seus segmentos para obras e acabamentos.",
   },

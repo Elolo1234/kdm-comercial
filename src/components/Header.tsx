@@ -42,6 +42,8 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between py-4">
         <Link to="/" className="flex items-center gap-2">
           <img src={logoKdm} alt="KDM Representações" className="h-10 w-auto" />
+          <p className="text-lg font-semibold text-clips">Empresa de representações e serviços</p>
+          
         </Link>
 
         {/* Desktop nav */}
