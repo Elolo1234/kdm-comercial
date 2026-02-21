@@ -5,8 +5,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Send, CheckCircle, Mail, Phone, MapPin } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import emailjs from "@emailjs/browser";
 
-const contactSchema = z.object({
+  const contactSchema = z.object({
   nome: z.string().trim().min(1, "Nome é obrigatório").max(100),
   email: z.string().trim().email("E-mail inválido").max(255),
   telefone: z.string().trim().min(1, "Telefone é obrigatório").max(20),
@@ -37,11 +38,27 @@ const ContactPage = () => {
     resolver: zodResolver(contactSchema),
   });
 
-  const onSubmit = async (_data: ContactFormData) => {
-    // Simulated submission
-    await new Promise((r) => setTimeout(r, 1000));
+  const onSubmit = async (data: ContactFormData) => {
+  try {
+    await emailjs.send(
+      "service_7ghdwlp",
+      "template_99ir8iz",
+      {
+        nome: data.nome,
+        email: data.email,
+        telefone: data.telefone,
+        interesse: data.interesse,
+        mensagem: data.mensagem,
+      },
+      "pvzUuWyEMOoLt2rdB"
+    );
+
     setSubmitted(true);
-  };
+
+  } catch (error) {
+    console.error("Erro ao enviar:", error);
+  }
+};
 
   return (
     <div className="min-h-screen flex flex-col">
