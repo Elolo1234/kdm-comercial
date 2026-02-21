@@ -192,11 +192,11 @@ const ContactPage = () => {
                     </div>
                     <div className="flex items-start gap-3">
                       <Phone size={18} className="shrink-0 text-primary mt-0.5" />
-                      <span>(11) 0000-0000</span>
+                      <span>(11) 99674-1222</span>
                     </div>
                     <div className="flex items-start gap-3">
                       <Mail size={18} className="shrink-0 text-primary mt-0.5" />
-                      <span>contato@kdm.com.br</span>
+                      <span>arcmcomercial@gmail.com</span>
                     </div>
                   </div>
                 </div>
