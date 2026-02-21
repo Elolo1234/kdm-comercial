@@ -36,12 +36,12 @@ const Footer = () => {
                 Bragança Paulista, SP
               </li>
               <li className="flex items-center gap-2">
-                <Phone size={16} className="shrink-0" />
-                (11) 0000-0000
+              <Phone size={16} className="shrink-0" />
+                (11) 99674-1222
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={16} className="shrink-0" />
-                contato@kdm.com.br
+                arcmcomercial@gmail.com
               </li>
             </ul>
           </div>

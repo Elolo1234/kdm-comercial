@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
 import productLed from "@/assets/product-led.jpg";
 import productHydraulic from "@/assets/product-hydraulic-new.jpeg";
-import productPlayground from "@/assets/product-playground-new.jpeg";
-import productEco from "@/assets/product-eco.jpg";
+import productPlayground3 from "@/assets/product-playground-3.jpeg";
+import productPlayground4 from "@/assets/product-playground-4.jpeg";
+import productEcoBanco from "@/assets/product-eco-banco.jpeg";
+import productEcoDeck from "@/assets/product-eco-deck.jpeg";
+import productEcoLixeira from "@/assets/product-eco-lixeira.jpeg";
 import productElectrical from "@/assets/product-electrical-new.jpeg";
 import productHardware from "@/assets/product-hardware.jpg";
 import productTintas from "@/assets/product-tintas.webp";
 import productUniformes from "@/assets/product-uniformes.jpeg";
-
 
 const products = [
   {
@@ -21,14 +23,29 @@ const products = [
     desc: "Materiais elétricos para baixa e alta tensão.",
   },
   {
-    image: productPlayground,
+    image: productPlayground3,
     title: "Playgrounds",
-    desc: "Playgrounds para praças, escolas e condomínios.",
+    desc: "Playgrounds completos para praças, escolas e condomínios.",
   },
   {
-    image: productEco,
-    title: "Móveis em Madeira Plástica Ecológica",
-    desc: "Lixeiras, bancos para jardins e praças, pergolados, decks e ripados.",
+    image: productPlayground4,
+    title: "Playgrounds Infantis",
+    desc: "Brinquedos e estruturas recreativas com piso emborrachado de segurança.",
+  },
+  {
+    image: productEcoBanco,
+    title: "Bancos e Lixeiras Ecológicas",
+    desc: "Bancos e lixeiras em madeira plástica ecológica para jardins e praças.",
+  },
+  {
+    image: productEcoDeck,
+    title: "Decks em Madeira Plástica",
+    desc: "Decks, pergolados e ripados em madeira plástica ecológica.",
+  },
+  {
+    image: productEcoLixeira,
+    title: "Lixeiras Ecológicas",
+    desc: "Lixeiras em madeira plástica ecológica para áreas públicas e privadas.",
   },
   {
     image: productHydraulic,
