@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <title>KDM Representações</title>
     <script>
-      // Redirect all 404s to index.html for SPA routing on GitHub Pages
-      var pathSegmentsToKeep = 1;
+      // Redirect all 404s to index.html for SPA routing on GitHub Pages/custom domain
+      var repoBaseSegment = 'kdm-comercial';
       var l = window.location;
+      var firstSegment = l.pathname.split('/')[1];
+      var pathSegmentsToKeep = firstSegment === repoBaseSegment ? 1 : 0;
+
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
         l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
@@ -18,3 +21,4 @@
   </head>
   <body></body>
 </html>
+

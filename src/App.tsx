@@ -8,8 +8,19 @@ import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
-const basename = import.meta.env.PROD ? "/kdm-comercial" : "/";
+const REPO_BASE = "/kdm-comercial";
 
+const resolveBasename = () => {
+  if (!import.meta.env.PROD || typeof window === "undefined") return "/";
+
+  const { hostname, pathname } = window.location;
+  const isGitHubPagesHost = hostname.endsWith("github.io");
+  const isRepoSubPath = pathname === REPO_BASE || pathname.startsWith(`${REPO_BASE}/`);
+
+  return isGitHubPagesHost && isRepoSubPath ? REPO_BASE : "/";
+};
+
+const basename = resolveBasename();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
