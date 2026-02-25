@@ -23,8 +23,7 @@ const AboutSection = () => {
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
             A empresa kdm comercial representações e serviços, empresa com mais de 20 anos de experiência,ofereço confiança, agilidade,  parceria, respeito e qualidade dos produtos, buscando sempre inovações, atendendo a diversos clientes como: órgãos públicos, prefeituras, construções, condomínio, indústrias e clientes privados. KDM é especializada no fornecimento de materiais elétricos, hidráulicos, luminárias LED, 
-            playgrounds e mobiliários ecológicos. Atendemos órgãos públicos, prefeituras e indústrias, com atuação
-            em Bragança Paulista, SP.
+            playgrounds e mobiliários ecológicos.
           </p>
         </div>
 
