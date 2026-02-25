@@ -203,8 +203,7 @@ const ContactPage = () => {
                 <div className="glass-card rounded-lg p-6">
                   <h3 className="font-heading font-semibold text-foreground mb-2">Horário</h3>
                   <p className="text-sm text-muted-foreground">
-                    Segunda a Sexta: 8h às 18h<br />
-                    Sábado: 8h às 12h
+                    Segunda a Sexta: 8h às 17h
                   </p>
                 </div>
               </aside>
